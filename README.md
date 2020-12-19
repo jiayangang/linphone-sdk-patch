@@ -1,11 +1,15 @@
 # linphone-sdk-patch
+
 修改linphone-sdk 4.4.2，增加一个虚拟camera，用于通话时，把rtsp和rtmp做为视频源。
 
 编译
 
 把这个补丁覆盖下载的代码树，然后就可以编译了。
+
 mkdir build
+
 cmake .. -DLINPHONESDK_PLATFORM=Android -DENABLE_GPL_THIRD_PARTIES=YES -DENABLE_NON_FREE_CODECS=YES -DENABLE_VIDEO=YES -DENABLE_FFMPEG=YES -DENABLE_VPX=NO
+
 make
 
 
