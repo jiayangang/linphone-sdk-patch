@@ -13,6 +13,7 @@ cmake .. -DLINPHONESDK_PLATFORM=Android -DENABLE_GPL_THIRD_PARTIES=YES -DENABLE_
 make
 
 
+
 如何使用
 
 1、选择摄像头 Live Stream(YUV)
@@ -22,7 +23,9 @@ make
 CallParams params = mLc.createCallParams(null);
 
 ......
+
 params.setCameraParam("rtsp://ip ..."); 
+
 ......
 
 mLc.inviteAddressWithParams(address, params);
