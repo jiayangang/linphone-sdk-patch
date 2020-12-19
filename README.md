@@ -1,5 +1,5 @@
 # linphone-sdk-patch
-修改linphone-sdk，增一个虚拟camera，用于把rtsp和rtmp做为视频源。
+修改linphone-sdk 4.4.2，增加一个虚拟camera，用于通话时，把rtsp和rtmp做为视频源。
 
 编译
 mkdir build
