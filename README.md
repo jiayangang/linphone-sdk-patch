@@ -1,2 +1,22 @@
 # linphone-sdk-patch
 修改linphone-sdk，增一个虚拟camera，用于把rtsp和rtmp做为视频源。
+
+编译
+mkdir build
+cmake .. -DLINPHONESDK_PLATFORM=Android -DENABLE_GPL_THIRD_PARTIES=YES -DENABLE_NON_FREE_CODECS=YES -DENABLE_VIDEO=YES -DENABLE_FFMPEG=YES -DENABLE_VPX=NO
+make
+
+
+如何使用
+
+1、选择摄像头 Live Stream(YUV)
+
+2、呼叫时，设置setCameraParam为rtsp或者rtmp地址：
+
+CallParams params = mLc.createCallParams(null);
+
+......
+params.setCameraParam("rtsp://ip ..."); 
+......
+
+mLc.inviteAddressWithParams(address, params);
