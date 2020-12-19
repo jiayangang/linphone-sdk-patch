@@ -20,3 +20,7 @@ params.setCameraParam("rtsp://ip ...");
 ......
 
 mLc.inviteAddressWithParams(address, params);
+
+
+linphoone-sdk下载：
+git clone -b 4.4.2 https://gitlab.linphone.org/BC/public/linphone-sdk.git --recursive
